@@ -19,7 +19,7 @@ Weitere Informationen oder Fragen: info@niklasl.com
 
 
 ------------
-####Sonstiges
+###Sonstiges
 
 Es wird keine Haftung bei folgenden Fällen übernommen:
 - Schaden den der Code auf dem jeweiligen Gerät anrichtet
