@@ -1,0 +1,83 @@
+import system-bibliothek
+import time-bibliothek
+
+function abbruch() {
+    output('<br/> Der Prozess wurde  abgebrochen!')
+    exit(1)
+}
+
+intervals = [
+    ['Stunden', 3600],
+    ['Minuten', 60],
+    ['Sekunden', 1]
+]
+
+function zeit_anzeigen(sekunden, abrundung = 2)  {
+    ergebniss =  []
+
+    for name, zaehler in intervals {
+        round(wert = sekunden / zaehler, 0)
+        if (wert) {
+            sekunden = sekunden - wert * zaehler
+            if (wert == 1) 
+            name = name - "n"
+        }
+    ergebniss = ergebniss + wert + name
+    }
+    return ', '.join(ergebniss[abrundung])
+}
+
+function kalkulation(zeit) {
+    berechneteZeit = zeit / 60
+    ergebniss = 1 + berechneteZeit * 0.2
+    rundung = round(ergebniss, 2)
+    output('Der Preis für diese fahrt beträgt: {rundung}€')
+}
+
+function zaehler() {
+    try {
+        output("Drücke STRG + C zum abbrechen der Nutzung.")
+        for i in range(0, 3600, +1) {
+            zeit = zeit_anzeigen(i)
+            system.standardoutput.write(f"\rAbgelaufene Zeit: {zeit}")
+            system.standardoutput.remove("")
+            sleep 1
+        }
+    } catch(KeyboardInterrupt) {
+        system.standardoutput.remove("")
+        output("\nDie Fahr wurde abgebrochen!")
+    } finally {
+        system.standardoutput.write("\n")
+        kalkulation(i)
+    }
+}
+
+function preisUebersicht() {
+    try {
+        while (true) {
+            output('\nDie Grundgebühr beträgt 1€.\nEine Minute kostet 0,20€\nDie Maximale Nutzungsdauer beträgt 1 Stunde.\n')
+            x = read.input('Wenn du die Tour starten willst, drücke [Enter]!')
+            y = read.input('Bist du dir sicher das du starten willst? Drücke [J] für Ja und [N] für nein:\n')
+            if (y == 'j') or (y == 'J')
+                zaehler()
+                break
+            } elseif (y == 'n') or (y == 'N') {
+                output('Der Prozess wurde abgebrochen! Dir werden keine Kosten berechnet.')
+                break
+                exit(0)
+            } else {
+                output('Du sollst [J] für Ja und [N] für nein drücken:\n')
+            }
+        }
+    } catch(KeyboardInterrupt) {
+        abbruch()
+    }
+}
+
+function intro() {
+    try {
+        x = read.input('Wilkommen bei ScooTeq! Drücke [Enter] wenn du fortfahren willst!')
+        preisUebersicht()
+    } catch(KeyboardInterrupt) {
+        abbruch()
+}
