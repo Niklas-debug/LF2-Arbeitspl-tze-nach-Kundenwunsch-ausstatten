@@ -17,7 +17,8 @@ Das Python-Programm berechnet anhand abgelaufender Sekunden den Fahrpreis für d
 
 Weitere Informationen oder Fragen: info@niklasl.com
 
-*Es wird keine Haftung bei folgenden Fällen übernommen:*
-*- Schaden den der Code auf dem jeweiligen Gerät anrichtet*
-*- Schaden die durch die Installation der oben genannten Programme und nicht genannten Programme/Software entsteht*
-*- Das kopieren der Dateien und durchfallen bei den Fachgesprächen, Prüfungen oder Präsentation des Arbeitsergebnisses*
+Es wird keine Haftung bei folgenden Fällen übernommen:
+- Schaden den der Code auf dem jeweiligen Gerät anrichtet
+- Schaden den der Code auf dem jeweiligen Gerät anrichtet
+- Schaden die durch die Installation der oben genannten Programme und nicht genannten Programme/Software entsteht
+- Das kopieren der Dateien und durchfallen bei den Fachgesprächen, Prüfungen oder Präsentation des Arbeitsergebnisses
