@@ -19,6 +19,7 @@ Weitere Informationen oder Fragen: info@niklasl.com
 
 
 ------------
+
 ###Sonstiges
 
 Es wird keine Haftung bei folgenden Fällen übernommen:
