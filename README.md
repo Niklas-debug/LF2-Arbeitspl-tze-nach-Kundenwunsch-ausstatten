@@ -8,7 +8,7 @@ Das Python-Programm berechnet anhand abgelaufender Sekunden den Fahrpreis für d
 ## Requirements
 
 - Empfohlen: Python 3.10 (Python muss als PATH-Variable installiert werden)
-- Texteditor/IDE - E.g. Sublime Text, Pycharm oder Visual-Studio-Code
+- Texteditor/IDE - Z.b.: Sublime Text, Pycharm oder Visual-Studio-Code
 - **Pip**: time, sys
 
 ## Ausführung
